@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<QCARInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="QCAR_Dataset_info.xsd">
+    <TargetSet version="3.4">
+        <AreaTarget version="4.0" bbox="-5.1242 -2.0245 -3.4406 3.1060 1.2622 5.7718" targetId="fc624b2817cf470ab9557b626c62c26d" name="LukeHoney" pathAuthoring="fc624b2817cf470ab9557b626c62c26d_authoring.glb" pathOcclusion="fc624b2817cf470ab9557b626c62c26d_occlusion.3dt" pathNavMesh="fc624b2817cf470ab9557b626c62c26d_navmesh.glb" />
+    </TargetSet>
+</QCARInfo>

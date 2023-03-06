@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<QCARInfo>
-    <TargetSet version="3.4">
-        <AreaTarget version="5.1" bbox="16.3779 -11.0306 -45.2750 42.6891 -0.2614 -11.0672" targetId="00c65671246b4ad4939d8157ae7d6543" name="Luke-factory4" pathAuthoring="00c65671246b4ad4939d8157ae7d6543_authoring.glb" pathOcclusion="00c65671246b4ad4939d8157ae7d6543_occlusion.3dt" pathNavMesh="00c65671246b4ad4939d8157ae7d6543_navmesh.glb" cloudTarget="false" />
-    </TargetSet>
-</QCARInfo>
