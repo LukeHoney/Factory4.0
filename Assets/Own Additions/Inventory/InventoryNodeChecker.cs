@@ -2,7 +2,7 @@ using UnityEngine;
 using game4automation;
 using TMPro;
 
-public class Machine1NodeReader : MonoBehaviour
+public class InventoryNodeChecker : MonoBehaviour
 {
     [Header("Factory Machine")]
     public string factoryMachineID;
@@ -16,6 +16,9 @@ public class Machine1NodeReader : MonoBehaviour
     //public TMP_Text digitalTwinFeedbackTMP;
     public TMP_Text uiFeedbackTMP;
     public string dataFromOPCUANode;
+
+    [Header("Outlines")]
+    public GameObject speare;
 
     void Start()
     {
@@ -54,6 +57,28 @@ public class Machine1NodeReader : MonoBehaviour
 
     private void Update()
     {
-        uiFeedbackTMP.text = "Factory machine " + factoryMachineID + " just registered " + nodeBeingMonitored + " as " + dataFromOPCUANode;
+        //uiFeedbackTMP.text = "Factory machine " + factoryMachineID + " just registered " + nodeBeingMonitored + " as " + dataFromOPCUANode;
+
+        if (dataFromOPCUANode == "False")
+        {
+            //badColour;
+            Debug.Log("No more Covers");
+            speare.SetActive(true);
+            
+        }
+
+        else if (dataFromOPCUANode == "True")
+
+        {
+            //goodColour;
+            Debug.Log("Good Colour ON");
+            speare.SetActive(false);
+            
+        }
+
+        else
+        {
+            Debug.Log("No Colour On");
+        }
     }
 }
