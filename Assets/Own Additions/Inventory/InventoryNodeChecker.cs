@@ -62,7 +62,7 @@ public class InventoryNodeChecker : MonoBehaviour
         if (dataFromOPCUANode == "False")
         {
             //badColour;
-            Debug.Log("No more Covers");
+            //Debug.Log("No more Covers");
             speare.SetActive(true);
             
         }
@@ -71,14 +71,14 @@ public class InventoryNodeChecker : MonoBehaviour
 
         {
             //goodColour;
-            Debug.Log("Good Colour ON");
+            //Debug.Log("Good Colour ON");
             speare.SetActive(false);
             
         }
 
         else
         {
-            Debug.Log("No Colour On");
+            //Debug.Log("No Colour On");
         }
     }
 }

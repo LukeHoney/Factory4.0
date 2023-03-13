@@ -20,6 +20,8 @@ public class MachineEmergenyStopNodeReader : MonoBehaviour
     [Header("Outlines")]
     public GameObject green;
     public GameObject red;
+    public GameObject greenlight;
+    public GameObject redlight;
 
     void Start()
     {
@@ -63,23 +65,27 @@ public class MachineEmergenyStopNodeReader : MonoBehaviour
         if (dataFromOPCUANode == "False")
         {
             //badColour;
-            Debug.Log("Bad Colour ON");
+            //Debug.Log("Bad Colour ON");
             green.SetActive(false);
             red.SetActive(true);
+            greenlight.SetActive(false);
+            redlight.SetActive(true);
         }
 
         else if (dataFromOPCUANode == "True")
 
         {
             //goodColour;
-            Debug.Log("Good Colour ON");
+            //Debug.Log("Good Colour ON");
             green.SetActive(true);
             red.SetActive(false);
+            greenlight.SetActive(true);
+            redlight.SetActive(false);
         }
 
         else
         {
-            Debug.Log("No Colour On");
+            //Debug.Log("No Colour On");
         }
     }
 }

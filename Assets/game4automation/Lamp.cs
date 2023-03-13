@@ -35,8 +35,8 @@ namespace game4automation
         [Header("Lamp IO's")]
         public int InColor = 0; //!<  Color of lamp,(0=White, 1 = Green, 2 = Yellow, 3 = Red)
         public bool Flashing = false; //!<  True if lamp should be flashing.
-        public float Period = 1; //!<  Lamp fleshing period in seconds.
-        public bool LampOn = false; //!  Lamp is on if true.
+        public float Period; //!<  Lamp fleshing period in seconds.
+        public bool LampOn = true; //!  Lamp is on if true.
 
         private Material _coloron;
         private Material _coloroff;
