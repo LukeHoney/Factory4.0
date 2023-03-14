@@ -8,6 +8,9 @@ public class DigitalTwinButton : MonoBehaviour
     public GameObject ARcamara;
     public GameObject DTcamara;
 
+    public GameObject ARtext;
+    public GameObject DTtext;
+
     public Button digitalTwinButton;
 
     public bool digitaltwinactive = true;
@@ -26,6 +29,8 @@ public class DigitalTwinButton : MonoBehaviour
         {
             ARcamara.SetActive(false);
             DTcamara.SetActive(true);
+            ARtext.SetActive(false);
+            DTtext.SetActive(true);
             digitaltwinactive = true;
 
         }
@@ -34,6 +39,8 @@ public class DigitalTwinButton : MonoBehaviour
         {
             DTcamara.SetActive(false);
             ARcamara.SetActive(true);
+            DTtext.SetActive(false);
+            ARtext.SetActive(true);
             digitaltwinactive = false;
 
         }

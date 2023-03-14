@@ -22,6 +22,8 @@ public class MachineEmergenyStopNodeReader : MonoBehaviour
     public GameObject red;
     public GameObject greenlight;
     public GameObject redlight;
+    public GameObject dtgreen;
+    public GameObject dtred;
 
     void Start()
     {
@@ -68,6 +70,8 @@ public class MachineEmergenyStopNodeReader : MonoBehaviour
             //Debug.Log("Bad Colour ON");
             green.SetActive(false);
             red.SetActive(true);
+            dtgreen.SetActive(false);
+            dtred.SetActive(true);
             greenlight.SetActive(false);
             redlight.SetActive(true);
         }
@@ -79,6 +83,8 @@ public class MachineEmergenyStopNodeReader : MonoBehaviour
             //Debug.Log("Good Colour ON");
             green.SetActive(true);
             red.SetActive(false);
+            dtgreen.SetActive(true);
+            dtred.SetActive(false);
             greenlight.SetActive(true);
             redlight.SetActive(false);
         }

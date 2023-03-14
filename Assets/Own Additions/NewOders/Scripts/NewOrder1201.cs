@@ -35,7 +35,8 @@ public class NewOrder1201 : MonoBehaviour
 	public string newOrderMessage;
 	#endregion
 
-
+	public GameObject thankyoupanel;
+	
 
 
 	// Use this for initialization 	
@@ -131,6 +132,7 @@ public class NewOrder1201 : MonoBehaviour
 		newOrderMessage = "444;RequestID=0;MClass=101;MNo=2;ErrorState=0;#PNo= " + partNumber + ";#Aux1Int=" + qty.ToString() + "\r";
 		SendMessageToServer(newOrderMessage);
 		Debug.Log("new phone");
+		thankyoupanel.SetActive(true);
 	}
 
 	//  private void Update()

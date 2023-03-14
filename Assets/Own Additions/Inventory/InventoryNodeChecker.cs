@@ -17,8 +17,14 @@ public class InventoryNodeChecker : MonoBehaviour
     public TMP_Text uiFeedbackTMP;
     public string dataFromOPCUANode;
 
-    [Header("Outlines")]
-    public GameObject speare;
+    [Header("panels")]
+    
+    public GameObject instockpanel;
+    public GameObject nostockpanel;
+    public GameObject dtinstockpanel;
+    public GameObject dtnostockpanel;
+
+
 
     void Start()
     {
@@ -63,8 +69,12 @@ public class InventoryNodeChecker : MonoBehaviour
         {
             //badColour;
             //Debug.Log("No more Covers");
-            speare.SetActive(true);
             
+            nostockpanel.SetActive(true);
+            instockpanel.SetActive(false);
+            dtnostockpanel.SetActive(true);
+            dtinstockpanel.SetActive(false);
+
         }
 
         else if (dataFromOPCUANode == "True")
@@ -72,8 +82,9 @@ public class InventoryNodeChecker : MonoBehaviour
         {
             //goodColour;
             //Debug.Log("Good Colour ON");
-            speare.SetActive(false);
-            
+            nostockpanel.SetActive(false);
+            instockpanel.SetActive(true);
+
         }
 
         else
