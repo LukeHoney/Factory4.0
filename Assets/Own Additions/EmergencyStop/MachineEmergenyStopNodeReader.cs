@@ -20,8 +20,8 @@ public class MachineEmergenyStopNodeReader : MonoBehaviour
     [Header("Outlines")]
     public GameObject green;
     public GameObject red;
-    public GameObject greenlight;
-    public GameObject redlight;
+    //public GameObject greenlight;
+    //public GameObject redlight;
     public GameObject dtgreen;
     public GameObject dtred;
 
@@ -72,8 +72,8 @@ public class MachineEmergenyStopNodeReader : MonoBehaviour
             red.SetActive(true);
             dtgreen.SetActive(false);
             dtred.SetActive(true);
-            greenlight.SetActive(false);
-            redlight.SetActive(true);
+            //greenlight.SetActive(false);
+            //redlight.SetActive(true);
         }
 
         else if (dataFromOPCUANode == "True")
@@ -85,8 +85,8 @@ public class MachineEmergenyStopNodeReader : MonoBehaviour
             red.SetActive(false);
             dtgreen.SetActive(true);
             dtred.SetActive(false);
-            greenlight.SetActive(true);
-            redlight.SetActive(false);
+            //greenlight.SetActive(true);
+            //redlight.SetActive(false);
         }
 
         else

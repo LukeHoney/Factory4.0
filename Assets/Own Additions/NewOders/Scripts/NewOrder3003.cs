@@ -134,6 +134,7 @@ public class NewOrder3003 : MonoBehaviour
 		SendMessageToServer(newOrderMessage);
 		Debug.Log("new phone");
 		thankyoupanel.SetActive(true);
+		
 	}
 
 	//  private void Update()

@@ -84,6 +84,9 @@ public class InventoryNodeChecker : MonoBehaviour
             //Debug.Log("Good Colour ON");
             nostockpanel.SetActive(false);
             instockpanel.SetActive(true);
+            dtnostockpanel.SetActive(false);
+            dtinstockpanel.SetActive(true);
+
 
         }
 

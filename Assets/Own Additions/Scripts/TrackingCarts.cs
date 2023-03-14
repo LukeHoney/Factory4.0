@@ -46,17 +46,17 @@ public class TrackingCarts : MonoBehaviour
 
     private void OnInterfaceConnected()
     {
-        Debug.LogWarning("Connected to Factory Machine " + factoryMachineID);
+        //Debug.LogWarning("Connected to Factory Machine " + factoryMachineID);
         var subscription = Interface.Subscribe(nodeID, NodeChanged);
         dataFromOPCUANode = subscription.ToString();
-        Debug.LogError(dataFromOPCUANode);
+        //Debug.LogError(dataFromOPCUANode);
         //digitalTwinRFIDFeedbackTMP.text = RFIDInfo;
         //uiRFIDFeedbackTMP.text = RFIDInfo;        
     }
 
     private void OnInterfaceDisconnected()
     {
-        Debug.LogWarning("Factory Machine " + factoryMachineID + " has disconnected");
+        //Debug.LogWarning("Factory Machine " + factoryMachineID + " has disconnected");
     }
 
     private void OnInterfaceReconnect()
@@ -67,7 +67,7 @@ public class TrackingCarts : MonoBehaviour
     public void NodeChanged(OPCUANodeSubscription sub, object value)
     {
         dataFromOPCUANode = value.ToString();
-        Debug.LogError("Factory machine " + factoryMachineID + " just registered " + nodeBeingMonitored + " as " + dataFromOPCUANode);
+        //Debug.LogError("Factory machine " + factoryMachineID + " just registered " + nodeBeingMonitored + " as " + dataFromOPCUANode);
     }
 
 
@@ -78,67 +78,67 @@ public class TrackingCarts : MonoBehaviour
 
         if (dataFromOPCUANode == "0")
         {
-            Debug.Log("cart 0 at machine"+ factoryMachineID);
+            //Debug.Log("cart 0 at machine"+ factoryMachineID);
             cart0.transform.position = waypoint.transform.position;
         }
 
         if (dataFromOPCUANode == "1")
         {
-            Debug.Log("cart 1 at machine"+factoryMachineID);
+            //Debug.Log("cart 1 at machine"+factoryMachineID);
             cart1.transform.position = waypoint.transform.position;
         }
 
         if (dataFromOPCUANode == "2")
         {
-            Debug.Log("cart 2 at machine" + factoryMachineID);
+            //Debug.Log("cart 2 at machine" + factoryMachineID);
             cart2.transform.position = waypoint.transform.position;
         }
 
         if (dataFromOPCUANode == "3")
         {
-            Debug.Log("cart 3 at machine" + factoryMachineID);
+            //Debug.Log("cart 3 at machine" + factoryMachineID);
             cart3.transform.position = waypoint.transform.position;
         }
 
         if (dataFromOPCUANode == "4")
         {
-            Debug.Log("cart 4 at machine" + factoryMachineID);
+            //Debug.Log("cart 4 at machine" + factoryMachineID);
             cart4.transform.position = waypoint.transform.position;
         }
 
         if (dataFromOPCUANode == "5")
         {
-            Debug.Log("cart 5 at machine" + factoryMachineID);
+            //Debug.Log("cart 5 at machine" + factoryMachineID);
             cart5.transform.position = waypoint.transform.position;
         }
 
         if (dataFromOPCUANode == "6")
         {
-            Debug.Log("cart 6 at machine" + factoryMachineID);
+            //Debug.Log("cart 6 at machine" + factoryMachineID);
             cart6.transform.position = waypoint.transform.position;
         }
 
         if (dataFromOPCUANode == "7")
         {
-            Debug.Log("cart 7 at machine" + factoryMachineID);
+            //Debug.Log("cart 7 at machine" + factoryMachineID);
             cart7.transform.position = waypoint.transform.position;
         }
 
         if (dataFromOPCUANode == "8")
         {
-            Debug.Log("cart 8 at machine" + factoryMachineID);
+            //Debug.Log("cart 8 at machine" + factoryMachineID);
             cart8.transform.position = waypoint.transform.position;
         }
 
         if (dataFromOPCUANode == "9")
         {
-            Debug.Log("cart 9 at machine" + factoryMachineID);
+            //Debug.Log("cart 9 at machine" + factoryMachineID);
             cart9.transform.position = waypoint.transform.position;
         }
 
         if (dataFromOPCUANode == "10")
         {
-            Debug.Log("cart 10 at machine" + factoryMachineID);
+            //Debug.Log("cart 10 at machine" + factoryMachineID);
             cart10.transform.position = waypoint.transform.position;
         }
     }
